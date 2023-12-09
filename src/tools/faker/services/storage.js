@@ -149,7 +149,7 @@ async function generateFiles(appwrite, buckets) {
     const bucket = buckets[i];
 
     for (let r = 0; r < filesNo; r += 1) {
-      const fileURL = getFakeFileURL();
+      const fileURL = 'https://picsum.photos/seed/appwrite/200/200';
 
       await streamUploadFromURL(fileURL, storageClient, bucket.$id).then(
         (response) => {
