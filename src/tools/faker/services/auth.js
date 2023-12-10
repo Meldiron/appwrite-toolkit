@@ -60,7 +60,7 @@ async function generateUsers(appwrite) {
           "unique()",
           appendRandomNumberToEmail(user.email),
           user.phoneNumber || null,
-          user.password,
+          undefined,
           user.displayName
         )
         .then((response) => {
