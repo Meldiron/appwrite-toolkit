@@ -133,7 +133,15 @@ async function generateFunctions(appwrite) {
       .create(
         "unique()",
         `${faker.word.adjective()} ${faker.word.noun()}`,
-        runtime
+        runtime,
+        'any',
+        [],
+        undefined,
+        15,
+        true,
+        true,
+        'index.js',
+        'npm install',
       )
       .then((response) => {
         functions.push(response);
