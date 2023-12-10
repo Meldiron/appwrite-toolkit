@@ -134,7 +134,7 @@ async function generateFunctions(appwrite) {
         "unique()",
         `${faker.word.adjective()} ${faker.word.noun()}`,
         runtime,
-        'any',
+        ['any'],
         [],
         undefined,
         15,
