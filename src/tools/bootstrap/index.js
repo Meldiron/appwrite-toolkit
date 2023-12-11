@@ -139,7 +139,7 @@ async function createProject(
       projectId: projectId,
       name: projectName,
       teamId: teamId,
-      region: "eu-de",
+      region: undefined,
     }),
   });
 
